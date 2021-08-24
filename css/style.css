@@ -1,0 +1,322 @@
+body{
+    background: #e3e8fb !important;
+    overflow-x: hidden;
+}
+
+/* =================== menu left style  ==================*/
+.menu-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 120px;
+    height: 100vh;
+    z-index: 99;
+}
+.content-menu-left{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 95%;
+    padding: .5rem;
+    border-radius: 12px;
+    background: #ffffff;
+    border: 1px solid #EBEDF2;
+    padding: 2rem .7rem;
+    position: relative;
+}
+.menu-logo{
+    position: absolute;
+    top: 1.5rem;
+}
+.logout{
+    position: absolute;
+    bottom: 1.5rem;
+}
+.menu-itens{
+    width: 100%;
+    height: auto;
+}
+.itens{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    width: 100%;
+    height: 50px;
+    transition: all .2s ease-in-out;
+}
+.itens:hover{
+    background: #00a87021;
+    cursor: pointer;
+}
+.itens:hover svg path {
+    transition: all .2s ease-in-out;
+    fill: #00A870 !important;
+}
+/* ======================= main header styles ==========================  */
+main{
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+.content-main{
+    width: 100%;
+    position: relative;
+    left: 2.3%;
+}
+header{
+   margin-top: 1.5rem;
+}
+.container-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.text-header{
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+    width: 15%;
+}
+.text-header p{
+    font-size: 13px;
+    color: #7F8492;
+    line-height: 16px;
+}
+.text-header h1{
+    font-size: 32px;
+    color: #07163E;
+    margin: 0;
+    margin-top: 12px;
+    margin-bottom: 5px;
+    line-height: 16px;
+}
+.search{
+    display: flex;
+    justify-content: flex-start;
+    width: 42.5%;
+    height: auto;
+}
+.search form{
+    display: flex;
+    width: 100%;
+}
+.search label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1rem;
+    width: 35px !important;
+    height: 44px !important;   
+    background: #FFFFFF;
+    border-radius: 12px 0 0 12px;
+    border: none;
+    color: #414141;
+}
+.search input{
+    width: 408px;
+    height: 44px;   
+    background: #FFFFFF;
+    border: none;
+    border-radius: 0 12px 12px 0;
+    color: #414141;
+    padding-left: 1rem;
+}
+.actions-header{
+    width: 42.5%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.profile{
+    display: flex;
+    align-items: center;
+}
+.icons{
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+    cursor: pointer;
+
+}
+.icons svg{
+    margin-right: .6rem;
+}
+.icons svg:hover path{
+    stroke: #00A870;
+}
+.profile-img{
+    border-radius: 100%;
+    width: 40px;
+    height: 40px; 
+    background: #7F8492;
+    margin-right: .8rem;
+}
+.profile p{
+    font-size: 16px;
+    color: #07163E;
+    font-weight: 600;
+}
+/* ================= main content styles =================== */
+.content {
+    margin-top: 2.5rem;
+}
+.content-row-one{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.recent-activities{
+    width: 60%;
+    height: 340px;
+    background: #FFFFFF;
+    border: 1px solid #EBEDF2;
+    border-radius: 12px;
+}
+.quick-transfer{
+    width: 38.5%;
+    height: 340px;
+    background: #FFFFFF;
+    border: 1px solid #EBEDF2;
+    border-radius: 12px;
+    padding: 1.5rem;
+    overflow: hidden;
+}
+.quick-transfer h3{
+    color: #414141;
+}
+.quick-transfer h3:nth-of-type(2){
+    margin-top: 1rem;
+}
+.card-contacts{
+    display: inline-flex;
+    margin-top: 2.8rem;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    width: 130px;
+    height: auto;
+    background: #F2F3F7;
+    border-radius: 6px;
+    margin-right: 1rem;
+}
+.card-img{
+    width: 80px;
+    height: 80px;
+    background: #7F8492;
+    border: 3px solid #FFFFFF;
+    position: relative;
+    top: -2.1rem;
+    border-radius: 500px;
+}
+.card-contacts p{
+    text-align: center;
+    color: #414141;
+    position: relative;
+    top: -1.4rem;
+    font-size: 14px;
+}
+
+.content-number-card{
+    width: 100%;
+    margin-top: .5rem;
+}
+.content-number-card form{
+    display: flex;
+    width: 80%;
+}
+.content-number-card label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    height: 48px;
+    background: #FFFFFF;
+    border: 1px solid #00A870;
+    box-shadow: 0px 2px 6px rgba(0, 168, 112, 0.2);
+    border-radius:  4px 0 0 4px;
+    border-right: none;
+    padding-left: 1rem;
+}
+.content-number-card input{
+    width: 468px;
+    height: 48px;
+    background: #FFFFFF;
+    border: 1px solid #00A870;
+    border-left: none;
+    box-shadow: 0px 2px 6px rgba(0, 168, 112, 0.2);
+    border-radius: 0 4px 4px 0;
+    padding-left: .8rem;
+}
+
+.content-row-two{
+    width: 100%;
+    margin-top: 1.5rem !important;
+}
+.container-cards{
+    display: flex;
+}
+.box-cards{
+    width: 300px;
+    height: 172px;
+    background: #FFFFFF;
+    border: 1px solid #EBEDF2;
+    border-radius: 12px;
+    margin-right: 1.5rem;
+}
+.add-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    width: 192px;
+    height: 172px;
+    background: #FFFFFF;
+    border: 2px dashed rgba(176, 181, 196, 0.25);
+    border-radius: 12px;
+    transition: all .2s ease-in-out;
+
+}
+.add-card p{
+    color: #414141;
+    margin-top: .5rem;
+    font-size: 15px;
+    font-weight: 600;
+}
+.add-card:hover{
+    cursor: pointer;
+    background: #00a8702c;
+}
+.add-card:hover svg path{
+    stroke: #fff;
+    fill: #fff;
+    background: #fff;
+}
+.content-row-tree{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 1.5rem !important;
+}
+.all-expenses{
+    width: 38.5%;
+    height: 295px;
+    background: #FFFFFF;
+    border: 1px solid #EBEDF2;
+    border-radius: 12px;
+}
+.latest-transections{
+    width: 60%;
+    height: 295px;
+    background: #FFFFFF;
+    border: 1px solid #EBEDF2;
+    border-radius: 12px;
+}
